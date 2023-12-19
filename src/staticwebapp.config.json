@@ -4,7 +4,7 @@
           "rewrite": "/custom-forbidden-page.html"
         },
         "404": {
-          "rewrite": "/custom-notfound-page.html"
+          "rewrite": "CUSTOM_NOTFOUND_PAGE"
         }
     }
 }
