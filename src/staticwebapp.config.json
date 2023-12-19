@@ -5,7 +5,8 @@
         ]
       },
     "responseOverrides": {
-    "403": {
-      "rewrite": "/custom-forbidden-page.html"
+        "403": {
+          "rewrite": "/custom-forbidden-page.html"
+        }
     }
-  }
+}
