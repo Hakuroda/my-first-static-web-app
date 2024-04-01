@@ -1,8 +1,19 @@
 {
+    "routes": [
+    {
+        "route": "/*",
+        "allowedRoles": ["authenticated"]
+    }
+  ],
     "responseOverrides": {
         "401": {
             "redirect": "/.auth/login/aad?post_login_redirect_uri=http://4.190.19.67/",
             "statusCode": 302
         }
+    },
+    "forwardingGateway": {
+        "allowedForwardedHosts": [
+            "4.190.19.67"
+        ]
     }
 }
