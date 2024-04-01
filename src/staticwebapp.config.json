@@ -1,10 +1,14 @@
 {
+    "routes": [
+    {
+        "route": "/*",
+        "allowedRoles": ["authenticated"]
+    }
+  ],
     "responseOverrides": {
-        "403": {
-          "rewrite": "/custom-forbidden-page.html"
-        },
-        "404": {
-          "rewrite": "CUSTOM_NOTFOUND_PAGE"
+        "401": {
+            "redirect": "/.auth/login/aad",
+            "statusCode": 302
         }
     }
 }
